@@ -1,3 +1,9 @@
+import {
+  classicroom,
+  contemporaryroom,
+  minimalistroom,
+  modernroom,
+} from "@/utils";
 import { FaTicketSimple } from "react-icons/fa6";
 import { MdReviews } from "react-icons/md";
 import { RiHome5Fill } from "react-icons/ri";
@@ -45,6 +51,46 @@ const Counts = () => {
               <p>Awward Winning</p>
             </div>
           </div>
+        </div>
+        <div className="mt-[6rem] mx-0 py-12 px-0">
+          <div className=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+            <div className="p-2 text-center">
+              <h3 className="my-2 font-medium uppercase">Classic</h3>
+              <img
+                src={classicroom}
+                alt="classic"
+                className="lg:w-[30vw] lg:h-[60vh] w-full object-cover transition-all duration-300 ease-in hover:scale-105 cursor-pointer"
+              />
+            </div>
+            <div className="p-2 text-center ">
+              <h3 className="my-2 font-medium uppercase">Modern</h3>
+              <img
+                src={modernroom}
+                alt="modern"
+                className="lg:w-[30vw] lg:h-[60vh] w-full object-cover transition-all duration-300 ease-in hover:scale-105 cursor-pointer"
+              />
+            </div>
+            <div className="p-2 text-center ">
+              <h3 className="my-2 font-medium uppercase">Minimalist</h3>
+              <img
+                src={minimalistroom}
+                alt="minimalist"
+                className="lg:w-[30vw] lg:h-[60vh] w-full object-cover transition-all duration-300 ease-in hover:scale-105 cursor-pointer"
+              />
+            </div>
+            <div className="p-2 text-center">
+              <h3 className="my-2 font-medium uppercase">Contemporary</h3>
+              <img
+                src={contemporaryroom}
+                alt="contemporary"
+                className="lg:w-[30vw] lg:h-[60vh] w-full object-cover transition-all duration-300 ease-in hover:scale-105 cursor-pointer"
+              />
+            </div>
+          </div>
+          <p className="my-16 mx-0 text-center text-2xl font-medium uppercase ">
+            Whether you're searching for houses, apartments, or condos. <br />
+            Its easy to find a place you'll love.
+          </p>
         </div>
       </div>
     </div>

@@ -4,12 +4,20 @@ import banner from "/assets/images/bannerImg.png";
 import pause from "/assets/images/pause.svg";
 import play from "/assets/images/play.svg";
 import replay from "/assets/images/replay.svg";
+import classic from "/assets/images/classic.png";
+import modern from "/assets/images/modern.png";
+import minimalist from "/assets/images/minimalist.png";
+import contemporary from "/assets/images/contemporary.png";
 
 export const realestateGif = realestate;
 export const bannerImg = banner;
 export const pauseImg = pause;
 export const playImg = play;
 export const replayImg = replay;
+export const classicroom = classic;
+export const modernroom = modern;
+export const minimalistroom = minimalist;
+export const contemporaryroom = contemporary;
 
 // -----------------------Videos-------------------------------
 import room1 from "/assets/videos/room1.mp4";
