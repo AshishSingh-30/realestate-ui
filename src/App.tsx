@@ -5,11 +5,12 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   const Layout = () => {
     return (
-      <div className=" bg-gradient-to-l from-[#040813] to-[#000000] text-white h-full ">
+      <div className=" bg-gradient-to-l from-[#040813] to-[#201f1f] text-white h-full ">
         <Navbar />
         <Outlet />
         <Footer />
@@ -26,6 +27,10 @@ function App() {
           path: "/",
           element: <Home />,
         },
+        {
+          path: "/about",
+          element: <About />
+        }
       ],
     },
     {

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { realestateGif } from "../utils/index.ts";
 
 const Navbar = () => {
   return (
@@ -7,7 +8,7 @@ const Navbar = () => {
         {/* -----------------nav_left------------ */}
         <div className="flex items-center gap-2">
           <img
-            src="./RealEstate.gif"
+            src={realestateGif}
             alt="estate logo"
             className=" w-8 h-8 object-contain"
           />
@@ -18,7 +19,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-10 font-normal text-[0.9rem]">
           <Link to="/">Home</Link>
-          <Link to="/">About</Link>
+          <Link to="/about">About</Link>
           <Link to="/">Contact</Link>
         </div>
 
