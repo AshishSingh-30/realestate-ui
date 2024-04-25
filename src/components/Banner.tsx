@@ -5,7 +5,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Banner = () => {
-  // TODO: Implement gsap text animation
   useGSAP(() => {
     gsap.to("#bannerHeading", {
       ease: "power1.inOut",

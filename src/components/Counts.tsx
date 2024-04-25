@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
   classicroom,
   contemporaryroom,
@@ -8,7 +9,21 @@ import { FaTicketSimple } from "react-icons/fa6";
 import { MdReviews } from "react-icons/md";
 import { RiHome5Fill } from "react-icons/ri";
 
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { animateWithGsap } from "@/utils/animations";
+
 const Counts = () => {
+  useGSAP(() => {
+    animateWithGsap("#bottomText", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power2.inOut",
+    });
+  }, []);
+
   return (
     <div className="bg-[#f8f8f8] text-black">
       <div className="w-[90%] my-0 mx-auto py-[8rem] px-[2rem]">
@@ -35,7 +50,7 @@ const Counts = () => {
             Home insurance
           </h4>
         </div>
-        <div className="my-8 mx-0  pt-4">
+        <div className="my-12 mx-0  pt-4">
           <p className=" text-green-600 text-2xl">Our Success</p>
           <div className="flex items-center justify-between flex-wrap gap-4 pt-6">
             <div>
@@ -87,11 +102,19 @@ const Counts = () => {
               />
             </div>
           </div>
-          <p className="my-16 mx-0 text-center text-2xl font-medium uppercase ">
-            Whether you're searching for houses, apartments, or condos. <br />
+          <p
+            id="bottomText"
+            className=" opacity-0 mt-32 mx-0 text-center text-2xl font-medium uppercase "
+          >
+            Whether you're searching for{" "}
+            <span className=" font-semibold lg:text-[2.5rem] text-4xl">
+              houses, apartments, or condos.
+            </span>{" "}
+            <br />
             Its easy to find a place you'll love.
           </p>
         </div>
+        
       </div>
     </div>
   );

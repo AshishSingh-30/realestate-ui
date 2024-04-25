@@ -8,19 +8,16 @@ const Highlight = () => {
       opacity: 1,
       y: 0,
     });
-    gsap.fromTo(
-      "#video-slider",
-      {
-        opacity: 0,
-        y: 100,
+    gsap.from("#video-slider  ", {
+      scrollTrigger: {
+        trigger: "#video-slider ",
+        start: "10% bottom",
       },
-      {
-        opacity: 1,
-        y: 0,
-        delay: 1,
-        stagger: 0.1,
-      }
-    );
+      opacity: 0,
+      scale: 2,
+      duration: 2,
+      ease: "power2.inOut",
+    });
   }, []);
   return (
     <section

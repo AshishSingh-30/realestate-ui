@@ -47,3 +47,10 @@ export const hightlightsSlides = [
     videoDuration: 16,
   },
 ];
+
+export const footerLinks = [
+  "Privacy Policy",
+  "Terms of Use",
+  "Sales Policy",
+  "Legal",
+];

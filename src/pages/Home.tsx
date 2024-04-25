@@ -1,6 +1,8 @@
+import AnimateMarquee from "@/components/AnimateMarquee";
 import Banner from "@/components/Banner";
 import Counts from "@/components/Counts";
 import Highlight from "@/components/Highlight";
+import JoinNow from "@/components/JoinNow";
 
 const Home = () => {
   return (
@@ -8,6 +10,8 @@ const Home = () => {
       <Banner />
       <Highlight />
       <Counts />
+      <AnimateMarquee />
+      <JoinNow />
     </div>
   );
 };
