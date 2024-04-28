@@ -8,13 +8,14 @@ const Highlight = () => {
       opacity: 1,
       y: 0,
     });
+
     gsap.from("#video-slider  ", {
       scrollTrigger: {
         trigger: "#video-slider ",
-        start: "10% bottom",
+        start: "5% bottom",
       },
       opacity: 0,
-      scale: 2,
+      scale: 1.2,
       duration: 2,
       ease: "power2.inOut",
     });

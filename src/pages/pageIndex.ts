@@ -1,6 +1,9 @@
 import Home from "./Home";
-import About from "./About"
-import SignIn from "./SignIn"
-import SignUp from "./SignUp"
+import About from "./About";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
+import ForgotPassword from "./ForgotPassword";
+import ListPage from "./ListPage";
+import SinglePage from "./SinglePage";
 
-export {Home, About, SignIn, SignUp}
+export { Home, About, SignIn, SignUp, ForgotPassword, ListPage, SinglePage };

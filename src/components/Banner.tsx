@@ -43,11 +43,11 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      <div className="w-[95%] my-12 mx-auto p-2">
-        <div className="my-4">
+      <div className="w-[95%] my-0 mx-auto">
+        <div className="my-[3rem] lg:my-[5rem]">
           <h1
             id="bannerHeading"
-            className="text-[5rem] font-semibold uppercase leading-snug opacity-0 translate-y-10"
+            className=" text-[2.3rem] md:text-[3.7rem] lg:text-[5rem] font-semibold uppercase leading-snug opacity-0 translate-y-10"
           >
             Easy way to find a <br />
             perfect property
@@ -68,7 +68,7 @@ const Banner = () => {
           id="bannerImg"
           className=" mt-16 flex items-center justify-end relative"
         >
-          <div className=" absolute top-[-10%] right-[10%]">
+          <div className=" absolute top-0 lg:top-[-10%] right-[10%]">
             <svg
               viewBox="0 0 100 100"
               width="120"

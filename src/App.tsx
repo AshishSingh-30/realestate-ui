@@ -1,18 +1,24 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
-import ForgotPassword from "./pages/ForgotPassword";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import {
+  About,
+  ForgotPassword,
+  Home,
+  ListPage,
+  SignIn,
+  SignUp,
+  SinglePage,
+} from "./pages/pageIndex";
 
 function App() {
   const Layout = () => {
     return (
       <div className=" bg-gradient-to-l from-[#040813] to-[#201f1f] text-white h-full ">
         <Navbar />
-        <Outlet />
+        <div className="my-14 mx-auto p-2">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     );
@@ -29,8 +35,16 @@ function App() {
         },
         {
           path: "/about",
-          element: <About />
-        }
+          element: <About />,
+        },
+        {
+          path: "/list",
+          element: <ListPage />,
+        },
+        {
+          path: "/:id",
+          element: <SinglePage />,
+        },
       ],
     },
     {

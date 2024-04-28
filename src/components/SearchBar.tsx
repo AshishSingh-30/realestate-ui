@@ -39,7 +39,7 @@ const SearchBar = () => {
           type="text"
           name="location"
           placeholder="City Location"
-          className=" rounded-none text-black font-medium outline-[#e4f700]"
+          className="text-sm lg:text-balance py-[2px] px-[4px] lg:p-2 rounded-none text-black font-medium outline-[#e4f700]"
         />
         <Input
           type="number"
@@ -47,7 +47,7 @@ const SearchBar = () => {
           min={0}
           max={10000000}
           placeholder="Min Price"
-          className=" rounded-none text-black font-medium outline-[#e4f700]"
+          className="text-sm lg:text-balance py-[2px] px-[4px] lg:p-2 rounded-none text-black font-medium outline-[#e4f700]"
         />
         <Input
           type="number"
@@ -55,7 +55,7 @@ const SearchBar = () => {
           min={0}
           max={10000000}
           placeholder="Max Price"
-          className=" rounded-none text-black font-medium outline-[#e4f700]"
+          className="text-sm lg:text-balance py-[2px] px-[4px] lg:p-2 rounded-none text-black font-medium outline-[#e4f700]"
         />
         <Button variant="secondary" className="mx-2 py-2 text-lg">
           <IoSearch />
