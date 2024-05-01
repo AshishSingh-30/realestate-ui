@@ -11,8 +11,8 @@ const Navbar = () => {
     <div
       className={
         openMenu
-          ? "fixed w-full top-0 z-10 bg-gradient-to-l from-[#040813] to-[#201f1f] text-white mobileActive"
-          : "fixed w-full top-0 z-10 bg-gradient-to-l from-[#040813] to-[#201f1f] text-white"
+          ? "fixed w-full top-0 z-[9999] bg-gradient-to-l from-[#040813] to-[#201f1f] text-white mobileActive"
+          : "fixed w-full top-0 z-[9999] bg-gradient-to-l from-[#040813] to-[#201f1f] text-white"
       }
     >
       <div className="flex items-center justify-between w-[95%] my-0 mx-auto lg:p-4 px-2 py-4">
