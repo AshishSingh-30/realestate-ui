@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
   return (
-    <div className=" mb-4 mx-0 p-2 bg-[#2c2c2c] transition-all ease-in duration-300 cursor-pointer rounded-2xl flex gap-2">
-      <Link to={`/${item.id}`} className="w-1/2 ">
+    <div className=" mb-4 mx-0 p-2 bg-[#2c2c2c] transition-all ease-in duration-300 cursor-pointer rounded-2xl flex gap-2 flex-col md:flex-row">
+      <Link to={`/${item.id}`} className=" w-full md:w-1/2 ">
         <div className="rounded-[10px] overflow-hidden">
           <img
             src={item.images}
             alt="Room image"
-            className=" w-full h-[10rem] object-cover hover:scale-105 transition-all duration-300 ease-in"
+            className=" w-full max-h-[9.5rem] object-cover hover:scale-105 transition-all duration-300 ease-in"
           />
         </div>
       </Link>
@@ -33,13 +33,13 @@ const Card = ({ item }) => {
           ${item.price}
         </p>
         {/* --------------bottom card--------- */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between my-2.5 mx-0">
           <div className="flex items-center gap-2">
-            <p className=" flex items-center gap-1 text-[0.8rem] bg-[#ff4e00]  py-[1px] px-[2px] ">
+            <p className=" flex items-center gap-1 text-xs lg:text-[0.8rem] bg-[#ff4e00]  py-[1px] px-[2px] ">
               <MdBedroomParent />
               {item.bedroom} bedroom
             </p>
-            <p className=" flex items-center gap-1 text-[0.8rem] bg-[#005fff] py-[1px] px-[2px] ">
+            <p className=" flex items-center gap-1 text-xs lg:text-[0.8rem] bg-[#005fff] py-[1px] px-[2px] ">
               <FaBath />
               {item.bathroom} bathroom
             </p>

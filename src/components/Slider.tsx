@@ -22,7 +22,7 @@ const Slider = ({ images }) => {
   return (
     <div className="w-full md:h-[50vh] h-full flex md:flex-row flex-col gap-5 ">
       {imageIndex !== null && (
-        <div className=" z-[9999] absolute w-[100vw] h-[100vh] top-0 left-0 bg-black flex items-center justify-between  ">
+        <div className=" z-[9999] fixed w-[100vw] h-[100vh] top-0 left-0 bg-black flex items-center justify-between  ">
           <div className=" flex items-center justify-center cursor-pointer flex-1">
             <IoIosArrowBack
               className=" text-5xl"

@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import { realestateGif } from "../utils/index.ts";
 import { MdClose, MdOutlineMenu } from "react-icons/md";
 import "./NavbarResponsive.css";
+import { GoDotFill } from "react-icons/go";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
+  const user = false;
 
   return (
     <div
@@ -31,19 +34,45 @@ const Navbar = () => {
         {/* -----------------nav_mid------------ */}
 
         <div className="flex items-center gap-10 font-normal text-sm lg:text-[0.9rem] nav-mid">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/">Contact</Link>
+          <Link to="/" onClick={() => setOpenMenu(false)}>
+            Home
+          </Link>
+          <Link to="/" onClick={() => setOpenMenu(false)}>
+            About
+          </Link>
+          <Link to="/" onClick={() => setOpenMenu(false)}>
+            Contact
+          </Link>
         </div>
 
         {/* -----------------nav_right------------ */}
         <div className="flex items-center gap-2 font-light text-sm lg:text-[0.9rem]">
-          <Link
-            to="/signin"
-            className="py-[0.2rem] px-[0.5rem]  md:py-[0.3rem] md:px-[0.7rem] bg-[#ebff00] text-black rounded font-medium"
-          >
-            Sign In
-          </Link>
+          {!user ? (
+            <div>
+              <Link
+                to="/profile"
+                className="relative flex font-semibold items-center gap-1"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1691335053879-02096d6ee2ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHByb2ZpbGUlMjBtZW58ZW58MHwwfDB8fHww"
+                  alt="user img"
+                  className=" w-9 h-9 rounded-full object-cover cursor-pointer"
+                />
+                <span>
+                  <GoDotFill className="absolute top-[-10px] left-6 text-yellow-400" />
+                </span>
+                <span className=" text-xs lg:text-base">John Doe</span>
+              </Link>
+            </div>
+          ) : (
+            <Link
+              to="/signin"
+              className="py-[0.2rem] px-[0.5rem]  md:py-[0.3rem] md:px-[0.7rem] bg-[#ebff00] text-black rounded font-medium"
+            >
+              Sign In
+            </Link>
+          )}
+
           <div className="menuClose_icon">
             <MdOutlineMenu
               className="mobile_nav_icon menuIcon"

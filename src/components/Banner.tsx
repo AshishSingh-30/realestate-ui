@@ -95,7 +95,7 @@ const Banner = () => {
           <img
             src={bannerImg}
             alt="Banner Image"
-            className="h-[100vh] object-contain"
+            className="h-[50vh] md:h-[100vh] object-contain"
           />
         </div>
       </div>

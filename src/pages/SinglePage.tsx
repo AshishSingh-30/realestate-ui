@@ -1,6 +1,7 @@
 import Map from "@/components/Map";
 import Slider from "@/components/Slider";
 import { singlePostData, userData } from "@/lib/dummyData";
+import { useEffect } from "react";
 import { CiBookmark } from "react-icons/ci";
 import { FaTools } from "react-icons/fa";
 import { FaLocationDot, FaSchool } from "react-icons/fa6";
@@ -20,7 +21,9 @@ const SinglePage = () => {
           <div className=" mt-12">
             <div className="flex justify-between ">
               <div className="flex flex-col md:gap-5 gap-2">
-                <h1 className="font-medium lg:text-xl text-base">{singlePostData.title}</h1>
+                <h1 className="font-medium lg:text-xl text-base">
+                  {singlePostData.title}
+                </h1>
                 <div className="flex items-center gap-1 md:text-sm text-xs text-gray-400 ">
                   <FaLocationDot />
                   <span>{singlePostData.address}</span>

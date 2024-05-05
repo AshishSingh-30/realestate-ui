@@ -12,7 +12,7 @@ const ListPage = () => {
   return (
     <div className="listpage">
       <div className="w-[95%] my-0 mx-auto py-4 px-2 flex gap-2">
-        <div className="w-[60%]">
+        <div className="w-full lg:w-[60%]">
           <div className="listleftTop">
             <h3 className="text-[1rem] font-medium text-slate-300 italic">
               Search results for {` `} <b className=" text-xl">london</b>
@@ -114,7 +114,7 @@ const ListPage = () => {
                 </div>
                 <Button
                   variant="secondary"
-                  className="mx-2 py-2 text-lg bg-yellow-100 hover:bg-yellow-300 w-auto"
+                  className="mx-2 py-2 text-lg bg-yellow-200 hover:bg-yellow-300 w-auto"
                 >
                   <IoSearch />
                 </Button>
@@ -122,13 +122,13 @@ const ListPage = () => {
             </form>
           </div>
           {/* ------------------All Hotels Cards-------------- */}
-          <div className="p-2">
+          <div className="p-2 max-h-[80vh] overflow-auto">
             {data.map((item) => (
               <Card key={item.id} item={item} />
             ))}
           </div>
         </div>
-        <div className=" w-[40%] h-[90vh] rounded-[20px] overflow-hidden">
+        <div className=" lg:w-[40%] lg:h-[90vh] rounded-[20px] overflow-hidden">
           <Map items={data} />
         </div>
       </div>
