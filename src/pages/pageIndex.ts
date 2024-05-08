@@ -1,6 +1,6 @@
 import Home from "./Home";
 import About from "./About";
-import SignIn from "./SignIn";
+import Login from "./Login";
 import SignUp from "./SignUp";
 import ForgotPassword from "./ForgotPassword";
 import ListPage from "./ListPage";
@@ -10,7 +10,7 @@ import ProfilePage from "./ProfilePage";
 export {
   Home,
   About,
-  SignIn,
+  Login,
   SignUp,
   ForgotPassword,
   ListPage,

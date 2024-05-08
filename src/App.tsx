@@ -11,8 +11,8 @@ import {
   ForgotPassword,
   Home,
   ListPage,
+  Login,
   ProfilePage,
-  SignIn,
   SignUp,
   SinglePage,
 } from "./pages/pageIndex";
@@ -64,8 +64,8 @@ function App() {
       ],
     },
     {
-      path: "/signin",
-      element: <SignIn />,
+      path: "/login",
+      element: <Login />,
     },
     {
       path: "/signup",

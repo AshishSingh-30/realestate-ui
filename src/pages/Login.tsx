@@ -13,13 +13,13 @@ import { Link } from "react-router-dom";
 import { Label } from "@/components/ui/label";
 import { realestateGif } from "@/utils";
 
-const SignUp = () => {
+const Login = () => {
   return (
     <>
       <div className="flex items-center h-[100vh] lg:justify-normal justify-center">
         <div className="relative w-1/2 lg:block hidden">
           <img
-            src="https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.pexels.com/photos/1481105/pexels-photo-1481105.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Login Img"
             className="w-full h-[100vh] object-cover"
           />
@@ -38,20 +38,11 @@ const SignUp = () => {
             <form>
               <Card className="w-full lg:w-[45vw] md:w-[50vw] border-none ">
                 <CardHeader>
-                  <CardTitle>Sign Up</CardTitle>
+                  <CardTitle>Login</CardTitle>
                   <CardDescription>Enter your credentials</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid w-full gap-4">
-                    <div className="flex flex-col items-start space-y-2">
-                      <div className="flex justify-between w-full">
-                        <Label htmlFor="username">
-                          Username{" "}
-                          <span className="text-sm text-red-700">*</span>
-                        </Label>
-                      </div>
-                      <Input id="username" type="text" />
-                    </div>
                     <div className="flex flex-col items-start space-y-2">
                       <div className="flex justify-between w-full">
                         <Label htmlFor="email">
@@ -70,11 +61,21 @@ const SignUp = () => {
                       </div>
                       <Input id="password" type="password" />
                     </div>
+                    {/* <div className="flex flex-col items-end space-y-2">
+                      <Link
+                        to="/forgotpassword"
+                        id="password"
+                        type="password"
+                        className=" text-blue-600 text-[0.85rem]"
+                      >
+                        forgot password
+                      </Link>
+                    </div> */}
                   </div>
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" type="submit">
-                    Submit
+                    Login
                   </Button>
                 </CardFooter>
               </Card>
@@ -85,14 +86,14 @@ const SignUp = () => {
               </div>
               <div className="relative flex justify-center text-xs uppercase">
                 <span className="bg-background px-2 text-muted-foreground">
-                  Back to login
+                  Create a account
                 </span>
               </div>
             </div>
             <CardFooter>
-              <Link to="/login" className="w-full my-4">
+              <Link to="/signup" className="w-full my-4">
                 <Button variant="outline" type="button" className=" w-full">
-                  Login
+                  Sign Up
                 </Button>
               </Link>
             </CardFooter>
@@ -103,4 +104,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Login;
